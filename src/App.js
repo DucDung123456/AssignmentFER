@@ -18,21 +18,7 @@ const App = () => {
         <Container className="mt-4">
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path="/shop" element=
-              {
-                <Row>
-                  <Col md={4}>
-                    <h2>Devices</h2>
-                    <DepartmentList/>
-                  </Col>
-                  <Col md={8}>
-                    <h2>Products</h2>
-                    <Search />
-                    <EmployeeList />
-                  </Col>
-                </Row>
-              }
-            />
+            <Route path="/shop" element={ <ShopPage />} />
             <Route path="/detail/:id" element={<EmployeeDetail />} />
           </Routes>
         </Container>
